@@ -72,3 +72,9 @@ variable "s5" {
 output "s5" {
   value = var.s5["number"]
 }
+
+variable "s6" {}
+
+output "s6" {
+  value = "var.s6"
+}
