@@ -1,7 +1,7 @@
 #output "sample" {
   //value = "Hi everyone"
   //value = var.sample
-}
+#}
 
 output "sample" {
   value = var.sample1
