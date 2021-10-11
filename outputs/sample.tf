@@ -54,8 +54,7 @@ variable "s4" {
 }
 
 output "s4" {
-  value = [var.s4,
-         var.s5]
+  value = [var.s4, var.s5]
 }
 
 variable "s5" {
