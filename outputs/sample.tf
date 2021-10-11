@@ -8,5 +8,5 @@ output "sample1" {
 }
 
 variable "sample" {
-  default = Myself
+  default = "Myself"
 }
