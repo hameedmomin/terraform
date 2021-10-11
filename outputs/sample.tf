@@ -8,7 +8,7 @@ output "sample1" {
 }
 
 variable "sample1" {
-  default = Myself
+  default = "Myself"
 }
 
 
