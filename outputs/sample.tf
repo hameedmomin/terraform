@@ -24,5 +24,5 @@ variable "s1" {
 }
 
 output "sample2" {
-  value = "var.s1"
+  value = "${var.s1}"
 }
