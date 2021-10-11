@@ -59,8 +59,8 @@ output "s4" {
 
 variable "s5" {
   default = [
-    sring - "hameed",
+    string - "hameed",
     number - 200,
-    boolen - true
+    boolean - true
   ]
 }
