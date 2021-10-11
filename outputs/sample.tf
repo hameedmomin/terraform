@@ -54,5 +54,13 @@ variable "s4" {
 }
 
 output "s4" {
-  value = var.s4
+  value = [ var.s4, var.s5 ]
+}
+
+variable "s5" {
+  default = [
+    sring - "hameed",
+    number - 200,
+    boolen - true
+  ]
 }
