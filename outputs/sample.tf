@@ -58,6 +58,7 @@ variable "s4" {
 output "s4" {
   value = var.s4[3]
 
+}
 
 #Mapping variable
 variable "s5" {
