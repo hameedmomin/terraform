@@ -7,6 +7,6 @@ output "sample1" {
   value = var.sample
 }
 
-variable "sample1" {
+variable "sample" {
   default = Myself
 }
