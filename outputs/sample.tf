@@ -35,4 +35,12 @@ variable "s2" {
 }
  output "s2" {
    value = var.s2
- }
+   }
+
+#Boolen data type
+variable "s3" {
+  default = true
+}
+output "s3" {
+  value = "var.s3"
+}
