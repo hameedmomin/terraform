@@ -1,12 +1,12 @@
 output "sample" {
-  value = "Hi everyone"
+  //value = "Hi everyone"
+  //value = var.sample
+}
+
+output "sample1" {
   value = var.sample
 }
 
-output "sampe1" {
-  value = "happy"
-}
-
-variable "sample" {
-  default = "Myself"
+variable "sample1" {
+  default = Myself
 }
