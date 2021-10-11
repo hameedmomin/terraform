@@ -82,6 +82,6 @@ output "s6" {
 variable "s7" {}
 
 output "s7" {
-  value = "var.s7"
+  value = var.s7
 
 }
