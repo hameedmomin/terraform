@@ -1,1 +1,1 @@
-ourself = ""
+ourself = "Love together"
