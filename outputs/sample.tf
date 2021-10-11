@@ -17,3 +17,8 @@ variable "sample1" {
 ## ${var.sample} is used within quotes.
 ## Usually ${} used only when you combine with some other data
 ## Single quotes does not support by terraform at any level. Supports only double quotes.
+
+# String Data type
+variable "s1" {
+  default = "good boy"
+}
