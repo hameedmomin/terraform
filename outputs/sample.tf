@@ -22,3 +22,7 @@ variable "sample1" {
 variable "s1" {
   default = "good boy"
 }
+
+output "s1" {
+  value = "s1"
+}
