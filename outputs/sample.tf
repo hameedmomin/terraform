@@ -1,5 +1,5 @@
 output "sample" {
-  value1 = "Hi everyone"
+  //value = "Hi everyone"
   value = var.sample1
 }
 
