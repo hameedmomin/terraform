@@ -88,5 +88,5 @@ output "s7" {
 variable "Myself" {}
 
 output "Myself" {
-  value = vars.Myself
+  value = var.Myself
 }
