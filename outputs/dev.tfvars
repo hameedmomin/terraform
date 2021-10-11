@@ -1,1 +1,1 @@
-Myself = "hameed"
+Myself = ""
