@@ -47,9 +47,11 @@ output "s3" {
 
 # Strings data should be quoted in double-quotes, But whereas numbers and booleans need not to be.
 
+
+#List variable
 variable "s4" {
   default = [
-  "hameed",200,true
+  "hameed",200,true,"happy"
   ]
 }
 
@@ -57,13 +59,16 @@ output "s4" {
   value = var.s4
 }
 
-output "s5" {
-  value = var.s5
-}
+
+#Mapping variable
 variable "s5" {
   default = {
     string = "hameed",
     number = 200,
     boolean = true
   }
+}
+
+output "s5" {
+  value = var.s5["number"]
 }
