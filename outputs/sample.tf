@@ -23,6 +23,6 @@ variable "s1" {
   default = "good boy"
 }
 
-output "sample2" {
+output "s1" {
   value = "${var.s1}"
 }
