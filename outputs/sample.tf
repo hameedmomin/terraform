@@ -78,10 +78,15 @@ variable "s6" {}
 output "s6" {
   value = var.s6
 }
-
+#remember that if we keep value in double quotes it will be hardcoded so we dont keep value in double quotes
 variable "s7" {}
 
 output "s7" {
   value = var.s7
+}
 
+variable "Myself" {}
+
+output "Myself" {
+  value = "vars.myself"
 }
