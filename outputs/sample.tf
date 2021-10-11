@@ -1,5 +1,5 @@
 output "sample" {
-  #value = "Hi everyone"
+  value = "Hi everyone"
   value = var.sample
 }
 
