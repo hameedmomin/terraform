@@ -42,5 +42,5 @@ variable "s3" {
   default = true
 }
 output "s3" {
-  value = "var.s3"
+  value = var.s3
 }
