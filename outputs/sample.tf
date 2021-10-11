@@ -78,3 +78,10 @@ variable "s6" {}
 output "s6" {
   value = var.s6
 }
+
+variable "s7" {}
+
+output "s7" {
+  value = "var.s7"
+
+}
