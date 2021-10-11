@@ -1,1 +1,1 @@
-s6 = Mylove
+s6 = "My love"
