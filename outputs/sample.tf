@@ -90,3 +90,9 @@ variable "Myself" {}
 output "Myself" {
   value = var.Myself
 }
+
+variable "ourself" {}
+
+output "ourself" {
+  value = var.ourself
+}
