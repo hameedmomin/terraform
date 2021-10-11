@@ -44,3 +44,15 @@ variable "s3" {
 output "s3" {
   value = var.s3
 }
+
+# Strings data should be quoted in double-quotes, But whereas numbers and booleans need not to be.
+
+variable "s4" {
+  default = [
+  "hameed",200,true
+  ]
+}
+
+output "s4" {
+  value = var.s4
+}
