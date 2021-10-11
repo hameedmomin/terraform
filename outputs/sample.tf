@@ -53,14 +53,17 @@ variable "s4" {
   ]
 }
 
+output "s4" {
+  value = var.s4
+}
+
 output "s5" {
   value = var.s5
 }
-
 variable "s5" {
   default = {
-    string - "hameed",
-    number - 200,
-    boolean - true
+    string = "hameed",
+    number = 200,
+    boolean = true
   }
 }
