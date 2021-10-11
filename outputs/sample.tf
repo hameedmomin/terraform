@@ -19,6 +19,8 @@ variable "sample1" {
 ## Single quotes does not support by terraform at any level. Supports only double quotes.
 
 # String Data type
+# it should be quoted in double qoute
+
 variable "s1" {
   default = "good boy"
 }
@@ -26,3 +28,11 @@ variable "s1" {
 output "s1" {
   value = "${var.s1}"
 }
+
+#Number Data type ; it not quoted
+variable "s2" {
+  default = 100
+}
+ output "s2" {
+   value = "${var.s2}"
+ }
