@@ -34,5 +34,5 @@ variable "s2" {
   default = 100
 }
  output "s2" {
-   value = "${var.s2}"
+   value = var.s2
  }
