@@ -58,9 +58,9 @@ output "s5" {
 }
 
 variable "s5" {
-  default = [
+  default = {
     string - "hameed",
     number - 200,
     boolean - true
-  ]
+  }
 }
