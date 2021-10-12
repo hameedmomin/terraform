@@ -3,6 +3,8 @@ resource "aws_instance" "sample" {
   instance_type = "t2.micro"
 }
 
+provider "us-east-1" {}
+
 output "public_ip" {
   value = aws_instance.sample.public_ip
 }
