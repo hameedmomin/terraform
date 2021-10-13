@@ -12,7 +12,4 @@ provider "aws" {
   region = "us-east-1"
 }
 
-output "public_ip" {
-  value = public_ip
-}
-
+variable "public_ip" {}
