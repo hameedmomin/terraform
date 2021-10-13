@@ -12,4 +12,6 @@ provider "aws" {
   region = "us-east-1"
 }
 
-variable "public_ip" {}
+output "public_ip" {
+  value = module.ec2.public_ip
+}
