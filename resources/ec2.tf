@@ -6,10 +6,13 @@ resource "aws_instance" "s1" {
 provider "aws" {
   region = "us-east-1"
 }
-#terraform {
-#  backend "s3" {
-#    bucket                = "terraform-batch56"
-#    key                   = "sample/terraform.tfstate"
-#    region                = "us-east-1"
-#    dynamodb_table        = "terraform"
-#  }
+# their is no option to create instances with templates so we directly create with spot instance
+
+terraform {
+  backend "s3" {
+    bucket = "myroboshopbucket"
+    key    = "sample/terraform.tfstate"
+    region = "us-east-1"
+    # dynamodb_table        = "terraform"
+  }
+}
