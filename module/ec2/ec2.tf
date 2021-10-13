@@ -5,3 +5,7 @@ resource "aws_instance" "sample" {
 }
 
 variable "sg_id" {}
+
+output "public_ip" {
+  value = aws_instance.sample.id
+}
