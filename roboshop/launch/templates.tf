@@ -1,6 +1,6 @@
 resource "aws_launch_template" "new" {
   name = "new"
-  image_id = "ami-074df373d6bafa625t"
+  image_id = "ami-074df373d6bafa625"
 
   instance_market_options {
     market_type = "spot"
@@ -19,5 +19,5 @@ resource "aws_launch_template" "new" {
 }
 
 output "template_id" {
-  value = "aws_launch_template.template_id"
+  value = "aws_launch_template.new_id"
 }
