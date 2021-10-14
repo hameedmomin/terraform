@@ -1,3 +1,3 @@
 module "la-temp" {
-  source = "./la-temp.tf"
+  source = "launch-temp.tf"
 }
