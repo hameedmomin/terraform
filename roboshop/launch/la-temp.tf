@@ -13,7 +13,7 @@ resource "aws_launch_template" "sample" {
     availability_zone                   = "us-east-1"
   }
 
-  vpc_security_group_ids {              = ["sg-0b9ab8f976b104516"]
+  vpc_security_group_ids               = ["sg-0b9ab8f976b104516"]
 
-  }
+
 }
