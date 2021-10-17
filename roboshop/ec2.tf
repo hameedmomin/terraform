@@ -3,7 +3,7 @@
 
 //}
 
-module "frontend" {
+module "COMPONENTS" {
   source = "./ec2"
 }
 
