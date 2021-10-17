@@ -17,10 +17,10 @@ resource "time_sleep" "wait" {
 }
 
 resource "aws_ec2_tag" "example" {
+  count             =length(var.COMPONENTS)
   resource_id       = element(aws_spot_instance_request.mywork.*.spot_instance_id, count.index )
   key               = "Name"
-  value             = "Hello World"
-
+  value             = element(var.COMPONENTS, count.index)
 }
 provider "aws" {
   region           = "us-east-1"
