@@ -10,6 +10,18 @@ resource "aws_spot_instance_request" "mywork" {
 
   }
 }
+
+resource "time_sleep" "wait" {
+  depends_on        = [aws_spot_instance_request.mywork]
+  create_duration   = "120s"
+}
+
+resource "aws_ec2_tag" "example" {
+  resource_id       = element(aws_spot_instance_request.mywork.*.spot_instance_id, count.index )
+  key               = "Name"
+  value             = "Hello World"
+
+}
 provider "aws" {
   region           = "us-east-1"
 }
