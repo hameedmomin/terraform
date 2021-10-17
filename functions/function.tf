@@ -3,5 +3,5 @@ variable "fruits" {
 }
 
 output "name_of_fruit" {
-  value = ["element(var.fruits, 1 )", "length(var.fruits, 0)" ]
+  value = {"element $(var.fruits, 1 )", "length $(var.fruits, 0)"}
 }
