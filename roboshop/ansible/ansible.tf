@@ -3,7 +3,7 @@ resource "null_resource" "ansible" {
   provisioner "remote-exec" {
 
     connection {
-      host       = "${elements(var.COMPONENTS, count.index)}.connection.internal"
+      host       = "${element(var.COMPONENTS, count.index)}.connection.internal"
       user       = "centos"
       password   = "DevOps321"
     }
