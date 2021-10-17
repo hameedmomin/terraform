@@ -1,7 +1,7 @@
 resource "null_resource" "ansible" {
 
   count               = length(var.COMPONENTS)
-  provisioner "remote-exec" {
+      provisioner "remote-exec" {
 
     connection {
       host            = "${element(var.COMPONENTS, count.index)}.connection.internal"
