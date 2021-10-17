@@ -3,7 +3,7 @@ resource "aws_spot_instance_request" "mywork" {
   ami                    = "ami-0e4e4b2f188e91845"
   spot_price             = "0.0035"
   instance_type          = "t2.micro"
-  vpc_security_group_ids = [sg-0b9ab8f976b104516]
+  vpc_security_group_ids = ["sg-0b9ab8f976b104516"]
 
 
   tags = {
