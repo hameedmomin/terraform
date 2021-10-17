@@ -7,5 +7,5 @@ output "name_of_fruit" {
 }
 
 output "count" {
-  value = length(var.fruits, 0)
+  value = length(var.fruits)
 }
