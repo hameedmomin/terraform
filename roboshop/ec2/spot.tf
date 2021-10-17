@@ -10,6 +10,7 @@ resource "aws_spot_instance_request" "mywork" {
 
   }
 }
+variable "COMPONENTS" {}
 
 resource "time_sleep" "wait" {
   depends_on        = [aws_spot_instance_request.mywork]
@@ -26,4 +27,4 @@ provider "aws" {
   region           = "us-east-1"
 }
 
-variable "COMPONENTS" {}
+
