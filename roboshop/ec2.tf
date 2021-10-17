@@ -3,7 +3,7 @@
 
 //}
 
-module "COMPONENTS" {
+module "spot" {
   source = "./ec2"
 }
 
