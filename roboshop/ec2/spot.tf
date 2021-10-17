@@ -33,5 +33,7 @@ resource "aws_route53_record" "dns" {
   name                    = "${element(var.COMPONENTS, count.index)}.connection.internal"
   type                    = "A"
   ttl                     = "300"
-  records                 = [element(aws_spot_instance_request.mywork.*.private_ip, count.index ]
+  records                 = [element(aws_spot_instance_request.mywork.*.private_ip, count.index)]
+
+}
 
