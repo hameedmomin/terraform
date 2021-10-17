@@ -1,11 +1,12 @@
 resource "null_resource" "ansible" {
-  count          = length(var.COMPONENTS)
+
+  count               = length(var.COMPONENTS)
   provisioner "remote-exec" {
 
     connection {
-      host       = "${element(var.COMPONENTS, count.index)}.connection.internal"
-      user       = "centos"
-      password   = "DevOps321"
+      host            = "${element(var.COMPONENTS, count.index)}.connection.internal"
+      user            = "centos"
+      password        = "DevOps321"
     }
 
     inline = [
