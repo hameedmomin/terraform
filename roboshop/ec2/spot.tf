@@ -19,6 +19,7 @@ resource "time_sleep" "wait" {
 }
 
 resource "aws_ec2_tag" "spot" {
+  depends_on              = [time_sleep.wait]
   count                   = length(var.COMPONENTS)
   resource_id             = element(aws_spot_instance_request.mywork.*.spot_instance_id, count.index )
   key                     = "Name"
@@ -29,6 +30,7 @@ provider "aws" {
 }
 
 resource "aws_route53_record" "dns" {
+  depends_on              = [time_sleep.wait]
   count                   = length(var.COMPONENTS)
   zone_id                 = "Z05483541JD3IOXLSP16I"
   name                    = "${element(var.COMPONENTS, count.index)}.connection.internal"
