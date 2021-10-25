@@ -1,6 +1,6 @@
 resource "aws_launch_template" "new" {
   name                       = "new"
-  image_id                   = "ami-074df373d6bafa625"
+  image_id                   = "ami-0e4e4b2f188e91845"
 
   instance_market_options {
     market_type              = "spot"
