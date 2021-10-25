@@ -28,6 +28,13 @@ resource "aws_ec2_tag" "spot" {
 provider "aws" {
   region                  = "us-east-1"
 }
+resource "aws_ec2_tag" "monitor" {
+  depends_on              = [time_sleep.wait]
+  count                   = length(var.COMPONENTS)
+  resource_id             = element(aws_spot_instance_request.mywork.*.spot_instance_id, count.index )
+  key                     = "Monitor"
+  value                   = "yes"
+}
 
 resource "aws_route53_record" "dns" {
   depends_on              = [time_sleep.wait]
