@@ -13,6 +13,7 @@ resource "aws_spot_instance_request" "mywork" {
 }
 variable "COMPONENTS" {}
 
+
 resource "time_sleep" "wait" {
   depends_on              = [aws_spot_instance_request.mywork]
   create_duration         = "120s"
