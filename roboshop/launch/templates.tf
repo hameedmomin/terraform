@@ -6,7 +6,7 @@ resource "aws_launch_template" "new" {
     market_type              = "spot"
   }
 
-  instance_type              = "t2.micro"
+  instance_type              = "t3.micro"
 
 
   placement {

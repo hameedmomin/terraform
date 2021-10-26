@@ -2,7 +2,7 @@ resource "aws_spot_instance_request" "mywork" {
   count                  = length(var.COMPONENTS)
   ami                    = "ami-0e4e4b2f188e91845"
   spot_price             = "0.0035"
-  instance_type          = "t2.micro"
+  instance_type          = "t3.micro"
   vpc_security_group_ids = ["sg-0b9ab8f976b104516"]
 
 
