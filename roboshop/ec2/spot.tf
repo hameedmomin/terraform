@@ -5,7 +5,6 @@ resource "aws_spot_instance_request" "mywork" {
   instance_type          = "t2.micro"
   vpc_security_group_ids = ["sg-0b9ab8f976b104516"]
 
-
   tags = {
     Name                 = element(var.COMPONENTS, count.index)
 
