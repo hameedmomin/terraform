@@ -12,7 +12,7 @@ resource "aws_spot_instance_request" "mywork" {
   }
 }
 
-##wait_for_fulfillment will wait untill this instances are created and then it will upgrade it
+##wait_for_fulfillment will wait untill this instances are created and then it will upgrade DNS record
 
 
 variable "COMPONENTS" {}
