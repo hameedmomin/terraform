@@ -1,6 +1,6 @@
 resource "aws_spot_instance_request" "mywork" {
   count                  = length(var.COMPONENTS)
-  ami                    = "ami-0e4e4b2f188e91845"
+  ami                    = "ami-0dc863062bc04e1de"
   spot_price             = "0.0035"
   instance_type          = "t2.micro"
   vpc_security_group_ids = ["sg-0b9ab8f976b104516"]
@@ -11,6 +11,10 @@ resource "aws_spot_instance_request" "mywork" {
 
   }
 }
+
+##wait_for_fulfillment will wait untill this instances are created and then it will upgrade it
+
+
 variable "COMPONENTS" {}
 
 
