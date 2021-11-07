@@ -1,4 +1,7 @@
 resource "null_resource" "ansible" {
+  triggers            = {
+    abc               = timestamp()
+  }
 
   count               = length(var.COMPONENTS)
 
