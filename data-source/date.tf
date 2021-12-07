@@ -1,5 +1,5 @@
 data "aws_dynamodb_table" "table" {
-  name = "terraform"
+  name = "myrobohsop"
 }
 
 output "table" {
