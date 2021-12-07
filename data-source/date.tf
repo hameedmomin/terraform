@@ -1,5 +1,5 @@
 data "aws_dynamodb_table" "table" {
-  name = "myrobohsop"
+  name = "myroboshop"
 }
 
 output "table" {
